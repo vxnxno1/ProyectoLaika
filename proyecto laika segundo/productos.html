@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <!-- link boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- fin boostrap -->
+
+    <!-- Link FontAwesome-->
+    <script src="https://kit.fontawesome.com/3434a3b8f0.js" crossorigin="anonymous"></script>
+    <!-- fin FontAwesome-->
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Llamar ccs -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fin css --> 
+
+</head>
+
+<body data-bs-theme="light" id="body">
+    <!-- Inicio NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Laika</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Nuestro Equipo</a>
+                    </li>
+                </ul>
+            </div>
+
+             <!-- Reloj -->
+             <div id="app">
+                <div class="container-clock">
+                  <h1 id="time">00:00:00</h1>
+                </div>
+              </div>
+            <!-- Fin reloj -->
+
+            <!--MODO OSCURO-->
+            <div class="modos" id="modos">
+                <button onclick="cambiarTema()" class="switchClaro" id="switchClaro">
+                    <i id="switchClarinete" class="fa-regular fa-sun"></i>
+                </button>
+            </div>
+            <!-- FIN MODO OSCURO -->
+            
+        </div>
+    </nav>
+    <!-- Fin navBar -->
+
+    <!-- hero 4 productos -->
+    <section id="hero4">
+        <h1 class="display-3">Productos</h1>
+        <p class="miniparrafo"> Te garantizamos los mejores estándares de calidad en tus compras Pettie.</p>
+        <!--Button especialistas-->
+    
+      </section>
+
+      <!-- fin hero 4 productos -->
+
+    <section class="contenedor">
+        <!-- Contenedor de productos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Arnes cachorro</span>
+                <img src="img/arnes1.jpg" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Arnes pettie l</span>
+                <img src="img/arnes2.png" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Arnes especial</span>
+                <img src="img/arnes3.jpg" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Saco pettie</span>
+                <img src="img/adult-medium.jpg" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Saco pettie xl</span>
+                <img src="img/premium3.jpg" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">arnes light pettie</span>
+                <img src="img/arnes4.jpg" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">saco pettie xl premium</span>
+                <img src="img/premium5.jpg" alt="" class="img-item">
+                <span class="precio-item">$54.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Saco premium cachorro</span>
+                <img src="img/premium7.jpg" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Saco premium mediano</span>
+                <img src="img/premium8.jpg" alt="" class="img-item">
+                <span class="precio-item">$42.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <!-- fin  contenedor de productos -->
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+
+        
+    </section>
+
+    
+    
+
+        <div class="row">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#!" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#!" class="nav-link px-2 text-muted">Novedades</a></li>
+                    <li class="nav-item"><a href="#!" class="nav-link px-2 text-muted">Próximamente</a></li>
+                </ul>
+                <p class="text-center text-muted">© <span id="currentYear"></span> PettieDog</p>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!--Link Reloj JS-->
+    <script src="js/clock.js"></script>
+    <!--fin Reloj JS-->
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+        
+    <!-- Jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- fin Jquery-->
+
+    <!-- link bootstrap   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- fin bootstrap -->
+
+</body>
+
+</html>
